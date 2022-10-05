@@ -31,8 +31,4 @@
     "@solidity-parser/parser": "^0.13.2",
     "eth-saddle": "^0.1.25"
   },
-  "resolutions": {
-    "scrypt.js": "https://registry.npmjs.org/@Solidity-CheckUp/ethereumjs-wallet/-/ethereumjs-wallet-0.6.3.tgz",
-    "**/ganache-core": "github:Solidity-CheckUp/ganache-core.git#jflatow/unbreak-fork"
-  }
 }
