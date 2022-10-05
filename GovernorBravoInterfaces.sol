@@ -87,7 +87,7 @@ contract GovernorBravoDelegateStorageV1 is GovernorBravoDelegatorStorage {
     TimelockInterface public timelock;
 
     /// @notice The address of the Solidity CheckUp token
-    CompInterface public Solp;
+    SolpInterface public Solp;
 
     /// @notice The official record of all proposals ever proposed
     mapping (uint => Proposal) public proposals;
@@ -186,7 +186,7 @@ interface TimelockInterface {
     function executeTransaction(address target, uint value, string calldata signature, bytes calldata data, uint eta) external payable returns (bytes memory);
 }
 
-interface CompInterface {
+interface SolpInterface {
     function getPriorVotes(address account, uint blockNumber) external view returns (uint96);
 }
 
